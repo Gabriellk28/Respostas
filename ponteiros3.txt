@@ -1,0 +1,5 @@
+A saída do programa será 11, 20, 10 e 30. 
+No entanto, se alterarmos a linha *p4 = b + (*p1)++ para *p4 = b + ++(*p1), 
+o valor da variável será incrementado antes de ser utilizado na operação. 
+Isso ocorre porque, na linguagem C, as instruções são lidas e executadas da direita para a esquerda. 
+Portanto, nesse caso específico, a saída seria 11, 20, 10 e 31.

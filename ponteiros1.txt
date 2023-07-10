@@ -1,0 +1,2 @@
+Ao final do trecho do programa, as variáveis "x", "y" e "p" terão, respectivamente,
+os seguintes valores: 3, 4 e o endereço de memória de "y".
