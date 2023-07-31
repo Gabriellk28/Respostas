@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
+//Função que calcula a área de um hexagono
 void calcula_hexagono(float l, float *area, float *perimetro)
 {
     (*area) = (3*pow(l, 2))*sqrt(3)/2;
@@ -10,10 +11,14 @@ void calcula_hexagono(float l, float *area, float *perimetro)
 int main(void)
 {
     float lado, area, perimetro;
+
+    //recebe o valor do lado do hexagono
     printf("Informe o valor do lado do hexagono:\n");
     scanf(" %f", &lado);
+
     calcula_hexagono(lado, &area, &perimetro);
     
     printf("O valor da área: %.1f\nO valor do perimetro: %.1f\n", area, perimetro);
+    
     return 0;
 }

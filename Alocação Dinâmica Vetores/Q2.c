@@ -31,7 +31,6 @@ int main(void)
         printf("Questão %d - %c\n", i+1, gabarito[i]);
     }
 
-
     //Aloca memória para o vetor que irá receber o gabarito das provas dos alunos.
     respostas = (char*) calloc(quant_questoes, sizeof(char));
     printf("\n");

@@ -34,7 +34,7 @@ int main(void)
     scanf(" %d", &data.ano);
 
     printf("Data:\n");
-    printf("%d/%d/%d\n", data.dia, data.mes, data.ano);
+    printf("Data: %02d/%02d/%04d\n", data.dia, data.mes, data.ano);
 
     return 0;
 }

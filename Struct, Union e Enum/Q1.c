@@ -18,6 +18,7 @@ typedef struct pessoa Pessoa;
 int main(void)
 {
     Pessoa pessoa;
+
     printf("Informe seu nome:\n");
     scanf(" %[^\n]", pessoa.nome);
     printf("Informe sua idade:\n");
