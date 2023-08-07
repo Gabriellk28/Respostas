@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-//Declração da struct Funcionario.
+//Declaração da struct Funcionario.
 typedef struct funcionario
 {
     char funcional[3];
@@ -39,6 +39,7 @@ void imprime_folha_pagamento(int n, Funcionario** pessoal, char depto)
         }
     }
 
+    //Imprime o valor total.
     printf("VALOR TOTAL: R$ %.2f\n\n", total_pag);
 }
 
