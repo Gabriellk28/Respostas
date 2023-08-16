@@ -46,7 +46,7 @@ void saca(ContaBancaria *cb, float valor)
 void transfere(ContaBancaria *cb1, ContaBancaria *cb2, float valor)
 {
     if(cb1->saldo > 0){
-        cb2->saldo += cb2->saldo + cb1->saldo;
+        cb2->saldo = cb2->saldo + valor;
     }
 }
 
