@@ -28,7 +28,7 @@ void imprime(struct frutas *fruta)
 {
     struct frutas *p;
     for(p = fruta->proxima; p != NULL; p = p->proxima){
-        printf("%s\n", p->proxima);
+        printf("%s\n", p->nome);
     }
 }
 
@@ -39,7 +39,7 @@ int main(void)
     lista = insere(lista, "maca", 3.99);
     lista = insere(lista, "abacate", 4.00);
     lista = insere(lista, "uva", 0.30);
-
+    imprime(lista);
     free(lista);
 
     return 0;
