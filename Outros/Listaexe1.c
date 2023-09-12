@@ -26,8 +26,8 @@ int main(void)
     fruta3->proxima = NULL;
 
     struct frutas *p;
-    for(p = fruta1->proxima; p != NULL; p = p->proxima){
-        printf("%s\n", p->proxima);
+    for(p = fruta1; p != NULL; p = p->proxima){
+        printf("%s\n", p->nome);
     }
     
     return 0;
