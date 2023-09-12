@@ -27,8 +27,9 @@ struct frutas *insere(struct frutas *fruta, char *nome, float preco)
 void imprime(struct frutas *fruta)
 {
     struct frutas *p;
-    for(p = fruta->proxima; p != NULL; p = p->proxima){
-        printf("%s\n", p->nome);
+    for (p = fruta; p != NULL; p = p->proxima)
+    {
+        printf("Nome:%s, Preço: %.2f\n", p->nome, p->preco);
     }
 }
 
